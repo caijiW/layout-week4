@@ -1,0 +1,53 @@
+//fonst-size
+$pixel_base: 8px;
+$size:(
+    "fz-xxs":1.75,    //14
+    "fz-xs":2,        //16
+    "fz-sm":2.5,       //20
+    "fz-reg":3,       //24
+    "fz-l":4.5,       //36
+    "fz-xl":6,        //48
+    "fz-xxl":8       //64
+);
+
+// color
+$primary: #AA0601;
+
+$secondary-dark: #650300;
+$secondary-light: #FBF2F2;
+
+$white: #fff;
+$black: #000;
+$black-light: #212529;
+
+$gray: #CED4DA;
+$gray-dark:#495057;
+$gray-light:#00000020;
+$colors:(
+    "primary":$primary,
+    "secondary-dark":$secondary-dark,
+    "secondary-light":$secondary-light,
+    "white":$white,
+    "black":$black,
+    "black-light":$black-light,
+    "gray":$gray,
+    "gray-dark":$gray-dark,
+    "gray-light":$gray-light
+);
+
+
+// space
+$space:(
+    "1":1,   //8
+    "2":2,   //16
+    "3":3,   //24
+    "4":4,   //32
+    "5":5,   //40
+    "6":6,   //48
+    "7":7,   //56
+    "8":8,   //64
+    "9":9,   //72
+    "10":10  //80
+);
+
+

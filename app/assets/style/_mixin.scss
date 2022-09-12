@@ -1,0 +1,22 @@
+@mixin size($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin pad {
+    @media screen and (max-width:992px) {
+        @content
+    }
+};
+
+@mixin mobile {
+    @media screen and (max-width:767px) {
+        @content
+    }
+};
+
+@mixin button-hover{
+    &:hover{
+        background-color: $secondary-dark;
+    }
+}

@@ -1,0 +1,164 @@
+.optical-navbar{
+    .optical-menu{
+        display: flex; 
+        @include pad{
+            padding: 0;
+        }    
+    }
+    .optical-menu-item{
+        width: 33.33%;
+        text-align: center;
+        border-left: solid 1px #DCDCDC;
+        border-right: solid 1px #DCDCDC;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;   
+            height: 8px;
+            width: 0;
+            background-color: $primary;
+            transition: .6s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+        &.active::after{
+            width: 100%;
+        }
+    }
+    a{
+        font-size: 32px;
+        @include pad{
+            padding: 16px 0;
+            font-size: 24px;
+        }
+        @include mobile{
+            font-size: 16px;
+        }
+
+    }
+}
+
+.optical-banner{
+    ul{
+        display: flex;
+    }
+}
+
+.optical-products{
+    .optical-name-ch{
+        font-size: 32px;
+    }
+
+    @include mobile{
+        h2,
+        .optical-name-ch{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .optical-products-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 80px;
+        @include pad{
+            row-gap: 40px;
+        }
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+        }
+    }
+
+    .optical-product-item{
+        width: 306px;
+        cursor: pointer;
+        position: relative;
+        a{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        @include pad{
+            width: 45%;
+        }
+        @include mobile{
+            width: 100%;
+            max-width: 348px;
+        }
+
+    }
+    .optical-product-img{
+        height: 168px;
+        overflow: hidden;
+        @include mobile{
+            height: unset;
+        }
+    }
+    .optical-product-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .optical-product-colors{
+        display: flex;   
+        .optical-product-color{
+            border-radius: 4px;
+            @include size(24px,24px);
+        }
+        .optical-product-color1{
+            background-color: #5F3E2D;
+        }
+        .optical-product-color2{
+            background-color: #B75929;
+        }
+    }
+    
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    @include mobile{
+        margin-top: 64px;
+    }
+    a{
+        font-size: 18px;
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+    .pagination-pre,
+    .pagination-next{    
+        border: solid 1px #555;
+        a{
+            padding: 12px;
+        }
+        &:hover{
+            background-color: #F2F2F2;
+        }
+    }
+    .pagination-next{
+        border-left: none;
+    }
+    .pagination-page {
+        border-top: solid 1px #555;
+        border-bottom: solid 1px #555;
+        border-right: solid 1px #555;
+        a{
+            padding: 12px 16px;
+        }
+        &.active,
+        &:hover{
+            color: #fff;
+            background-color: #000;
+        }
+    }
+}

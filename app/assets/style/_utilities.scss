@@ -1,0 +1,102 @@
+.fw-bold{
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+
+.product-hover:hover{
+    opacity: 0.8;
+}
+
+.product-bg-hover:hover img{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+//font-size
+@each $key, $value in $size{
+    .#{$key}{
+        font-size: $pixel_base * $value; 
+    }
+}
+
+// color
+@each $key, $value in $colors{
+    .color-#{$key}{
+        color: $value;
+    }
+}
+
+@each $key, $value in $colors{
+    .bgc-#{$key}{
+        background-color: $value; 
+    }
+}
+
+//space
+
+@each $key, $value in $space{
+    .pt-#{$key}{
+        padding-top: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .pb-#{$key}{
+        padding-bottom: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .pl-#{$key}{
+        padding-left: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .pr-#{$key}{
+        padding-right: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .mt-#{$key}{
+        margin-top: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .mb-#{$key}{
+        margin-bottom: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .ml-#{$key}{
+        margin-left: $pixel_base * $value; 
+    }
+}
+
+@each $key, $value in $space{
+    .mr-#{$key}{
+        margin-right: $pixel_base * $value; 
+    }
+}
+
+
+
+

@@ -1,0 +1,59 @@
+body{
+    font-family: 'Roboto','Noto Sans TC', sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1296px;
+    margin: auto;
+    padding: 0 12px;
+    @include pad{
+        max-width: 969px;
+        // padding: 0 36px;
+    }
+    // @include mobile{
+    //     padding: 0 15px;
+    // }
+}
+
+.section-container {
+    max-width: 1296px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad {
+        max-width: 969px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+  
+    @include mobile {
+        // max-width: 348px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      
+      h3 {
+        font-size: 24px;
+      }
+    }
+    h2{
+        font-size: 42px;
+        @include mobile{
+            font-size: 24px;
+        }
+      }
+  }
